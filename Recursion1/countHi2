@@ -1,0 +1,4 @@
+public int countHi2(String str) {
+  if(str.length()<2)  return 0;
+  return str.length()>=3 && str.substring(0,3).equals("xhi") ? countHi2(str.substring(3)) : (str.substring(0,2).equals("hi") ? 1 + countHi2(str.substring(2)) : countHi2(str.substring(1)));
+}

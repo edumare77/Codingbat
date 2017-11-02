@@ -1,0 +1,4 @@
+public boolean array220(int[] nums, int index) {
+  if(nums.length== 0 || nums.length-1==index) return false;
+  return nums[index]*10==nums[index+1] ? true : array220(nums, index+1);
+}

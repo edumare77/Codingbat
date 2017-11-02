@@ -1,0 +1,4 @@
+public boolean array6(int[] nums, int index) {
+  if((index==nums.length-1 && nums[index]!=6) || nums.length==0) return false;
+  return nums[index]==6 ? true : array6(nums,index+1);
+}
